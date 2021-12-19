@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeXC</title>
+
+    <script src="./Codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="./Codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="./Codemirror/theme/ayu-mirage.css">
+    <!-- MODES -->
+    <script src="./Codemirror/mode/javascript/javascript.js"></script>
+    <script src="./Codemirror/mode/css/css.js"></script>
+    <script src="./Codemirror/mode/xml/xml.js"></script>
+    <!-- ADDONS -->
+    <script src="./Codemirror/addon/selection/active-line.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="pane code-pane">
+            <div class="html-box code-box" id="html-box">
+                <div class="title">
+                    <span class="title-text">
+                        HTML
+                    </span>
+                </div>
+            </div>
+            <div class="css-box code-box" id="css-box">
+                <div class="title">
+                    <span class="title-text">
+                        CSS
+                    </span>
+                </div>
+            </div>
+            <div class="js-box code-box" id="js-box">
+                <div class="title">
+                    <span class="title-text">
+                        JS
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="pane output">
+            <iframe id="preview" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
